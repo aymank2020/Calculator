@@ -1,0 +1,16 @@
+name: fraction_calculator
+description: Add/subtract/multiply/divide rational fractions and simplify.
+publish_to: none
+version: 1.0.0+1
+environment:
+  sdk: '>=3.11.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  offline_foundation:
+    path: ../../packages/offline_foundation
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true

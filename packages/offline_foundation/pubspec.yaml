@@ -1,0 +1,14 @@
+name: offline_foundation
+description: Shared native Flutter foundation for Offline Fifty.
+publish_to: none
+version: 1.0.0
+environment:
+  sdk: '>=3.11.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true

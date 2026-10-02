@@ -1,0 +1,27 @@
+name: calculator_hub
+description: Five offline numeric tools with validated inputs.
+publish_to: none
+version: 0.1.0+1
+environment:
+  sdk: '>=3.11.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  offline_foundation:
+    path: packages/offline_foundation
+  percentage_calculator:
+    path: apps/percentage_calculator
+  fraction_calculator:
+    path: apps/fraction_calculator
+  geometry_calculator:
+    path: apps/geometry_calculator
+  number_base:
+    path: apps/number_base
+  unit_converter:
+    path: apps/unit_converter
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+flutter:
+  uses-material-design: true

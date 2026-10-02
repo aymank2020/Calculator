@@ -1,0 +1,16 @@
+name: percentage_calculator
+description: Percentage of, percent change and reverse percentage.
+publish_to: none
+version: 1.0.0+1
+environment:
+  sdk: '>=3.11.0 <4.0.0'
+dependencies:
+  flutter:
+    sdk: flutter
+  offline_foundation:
+    path: ../../packages/offline_foundation
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+flutter:
+  uses-material-design: true

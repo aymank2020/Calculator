@@ -1,0 +1,16 @@
+name: Flutter analysis and tests
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install tested Flutter SDK from official source
+        run: |
+          git clone --depth 1 --branch 3.41.1 https://github.com/flutter/flutter.git "$RUNNER_TEMP/flutter"
+          echo "$RUNNER_TEMP/flutter/bin" >> "$GITHUB_PATH"
+      - run: flutter pub get
+      - run: dart analyze .
+      - run: flutter test test apps
