@@ -22,3 +22,5 @@ flutter build apk --debug
 Android and Windows platform source is included. Debug builds are development
 artifacts; no release signing or app-store publication is claimed. iOS/macOS/
 Linux are not included or tested in this first version.
+
+Verified in this first version: 39 passing tests, clean analysis, Android debug APK and Windows debug build. See the development review for exact scope.
